@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dynamic color input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <h1>Enter the color in the input box in one of the following form</h1>
+    <ol>
+        <li>Valid Name color like blue, green, yellow etc.</li>
+        <li>Valid format in rgb(value,value,value) ex: rgb(123,23,150)</li>
+        <li>Valid format in hex code example :#FFFF12 etc.</li>
+    </ol>
+    <div ng-app="" ng-init="colorName='blue'">
+        <input ng-model="colorName" style="background-color:{{colorName}}" >
+        
+    </div>
+    
+</body>
+</html>
